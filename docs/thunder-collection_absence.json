@@ -1,0 +1,425 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "absence",
+    "collectionId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+    "dateExported": "2024-06-21T02:24:27.449Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "1379677b-76e9-42e8-b56e-fd2d58011bd6",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "register",
+            "url": "localhost:5000/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-06-20T21:39:44.101Z",
+            "modified": "2024-06-20T22:13:45.519Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"employee_name\": \"john\",\n  \"password\": \"john\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "888240ec-19cc-45c8-82b1-def2160faa7c",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "login",
+            "url": "localhost:5000/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-06-20T21:51:45.397Z",
+            "modified": "2024-06-21T02:18:52.343Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"employee_code\": \"2106023\",\n  \"password\": \"dummy\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ed74adfe-3145-49d0-9293-d789880a95e1",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "create employee",
+            "url": "localhost:5000/employee",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-06-20T22:40:42.160Z",
+            "modified": "2024-06-21T02:18:36.443Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"employee_name\": \"atha\",\n  \"password\": \"dummy\",\n  \"department_id\": 2,\n  \"position_id\": 4,\n  \"superior\": 8\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "7b09d038-bdae-4166-80c4-b66bbf942e67",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "get employee id",
+            "url": "localhost:5000/employee/22",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-06-20T23:06:12.710Z",
+            "modified": "2024-06-21T02:14:57.025Z",
+            "headers": []
+        },
+        {
+            "_id": "80dc9cde-f65f-4669-ae57-3976f27c5e90",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "get all employees",
+            "url": "localhost:5000/employees",
+            "method": "GET",
+            "sortNum": 45000,
+            "created": "2024-06-20T23:44:44.939Z",
+            "modified": "2024-06-20T23:47:19.917Z",
+            "headers": []
+        },
+        {
+            "_id": "d6342e7c-d638-4ca6-b2b8-59e0347b23ac",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "update employee",
+            "url": "localhost:5000/employee/22",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-06-20T23:12:48.623Z",
+            "modified": "2024-06-21T02:17:11.422Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"department_id\": 1,\n  \"superior\": 8,\n  \"position_id\": 1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3f178ef3-40f6-43e8-bf14-957833f2148b",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "delete employee",
+            "url": "localhost:5000/employee/1",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-06-20T23:34:22.627Z",
+            "modified": "2024-06-20T23:34:34.686Z",
+            "headers": []
+        },
+        {
+            "_id": "0d4b293c-c47e-46c9-b6a9-7d39fc2817f7",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "create department",
+            "url": "localhost:5000/department",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2024-06-21T00:01:31.472Z",
+            "modified": "2024-06-21T00:02:11.698Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"department_name\": \"IT\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "db5422ed-29a8-4e11-ba24-6d200a6a1b43",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "get department id",
+            "url": "localhost:5000/department/2",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-06-21T00:10:15.399Z",
+            "modified": "2024-06-21T00:10:22.056Z",
+            "headers": []
+        },
+        {
+            "_id": "2f32088a-3926-4836-ad59-a7926c34de7f",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "get all department",
+            "url": "localhost:5000/departments",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-06-21T00:10:44.054Z",
+            "modified": "2024-06-21T00:10:50.158Z",
+            "headers": []
+        },
+        {
+            "_id": "32fe39d9-f54a-4c13-8f83-8e3e22a53bf0",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "update department",
+            "url": "localhost:5000/department/2",
+            "method": "PUT",
+            "sortNum": 110000,
+            "created": "2024-06-21T00:11:07.956Z",
+            "modified": "2024-06-21T00:11:30.045Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"department_name\": \"Backend\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "0c10e814-76fb-4580-a9f1-c14914c67c21",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "delete department",
+            "url": "localhost:5000/department/3",
+            "method": "DELETE",
+            "sortNum": 120000,
+            "created": "2024-06-21T00:12:47.065Z",
+            "modified": "2024-06-21T00:12:57.885Z",
+            "headers": []
+        },
+        {
+            "_id": "26b877c0-b34f-41d0-838c-727b3b42287f",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "create position",
+            "url": "localhost:5000/position",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2024-06-21T00:20:57.695Z",
+            "modified": "2024-06-21T02:18:07.723Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"position_name\": \"Golang Developer\",\n  \"department_id\": 2\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "c72e42cc-3dc2-4a80-8db0-2f996ad6fe61",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "get position",
+            "url": "localhost:5000/position/2",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-06-21T00:25:32.033Z",
+            "modified": "2024-06-21T00:25:46.176Z",
+            "headers": []
+        },
+        {
+            "_id": "ab106f99-d1eb-47fe-9bd8-d65e98563b06",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "get all position",
+            "url": "localhost:5000/positions",
+            "method": "GET",
+            "sortNum": 150000,
+            "created": "2024-06-21T00:26:01.783Z",
+            "modified": "2024-06-21T00:26:09.126Z",
+            "headers": []
+        },
+        {
+            "_id": "873dab54-46a2-4c8b-ad70-f05b9e36ab58",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "update position",
+            "url": "localhost:5000/position/2",
+            "method": "PUT",
+            "sortNum": 160000,
+            "created": "2024-06-21T00:27:48.516Z",
+            "modified": "2024-06-21T00:28:12.873Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"position_name\": \"dummy\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "212fc265-391c-4ebd-80c3-3281853526cc",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "delete position",
+            "url": "localhost:5000/position/3",
+            "method": "DELETE",
+            "sortNum": 180000,
+            "created": "2024-06-21T00:30:22.943Z",
+            "modified": "2024-06-21T00:30:39.245Z",
+            "headers": []
+        },
+        {
+            "_id": "2c1a34c1-3d42-4971-ab90-f543be03df9c",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "create location",
+            "url": "localhost:5000/location",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2024-06-21T00:37:47.459Z",
+            "modified": "2024-06-21T00:38:16.113Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"location_name\": \"HQ\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a38990d3-44ad-4c1e-b65e-de7c679920f6",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "get location id",
+            "url": "localhost:5000/location/2",
+            "method": "GET",
+            "sortNum": 200000,
+            "created": "2024-06-21T00:38:35.805Z",
+            "modified": "2024-06-21T00:38:42.846Z",
+            "headers": []
+        },
+        {
+            "_id": "dfd5032d-8cc7-4cd7-b981-c5fe474a3d93",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "get all location",
+            "url": "localhost:5000/locations",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2024-06-21T00:38:59.397Z",
+            "modified": "2024-06-21T00:39:08.066Z",
+            "headers": []
+        },
+        {
+            "_id": "4d821b36-06c3-4666-b267-aa61754f158c",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "update location",
+            "url": "localhost:5000/location/2",
+            "method": "PUT",
+            "sortNum": 220000,
+            "created": "2024-06-21T00:39:26.300Z",
+            "modified": "2024-06-21T00:39:57.236Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"location_name\": \"coworking\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e0905c8f-99bc-4ec6-aa3b-903efeb1deda",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "delete location",
+            "url": "localhost:5000/location/3",
+            "method": "DELETE",
+            "sortNum": 230000,
+            "created": "2024-06-21T00:40:21.813Z",
+            "modified": "2024-06-21T00:40:30.404Z",
+            "headers": []
+        },
+        {
+            "_id": "56ef2527-fe77-496b-95ac-fbc3534672c5",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "create attendance",
+            "url": "localhost:5000/attendance",
+            "method": "POST",
+            "sortNum": 240000,
+            "created": "2024-06-21T01:00:39.098Z",
+            "modified": "2024-06-21T02:15:38.506Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  // \"employee_id\": 8, // default is current employee id from jwt\n  // \"absent_in\": \"2023-06-21T08:00:00Z\", // default is now utc\n  \"location_id\": 1\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "3d3eb8cf-89c5-4b3b-9a4c-a324c5a3272a",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "get attendance",
+            "url": "localhost:5000/attendance/2",
+            "method": "GET",
+            "sortNum": 250000,
+            "created": "2024-06-21T01:07:05.894Z",
+            "modified": "2024-06-21T01:23:30.840Z",
+            "headers": []
+        },
+        {
+            "_id": "f89d55b5-f960-49f2-9e9c-b70b724a990d",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "get all attendances",
+            "url": "localhost:5000/attendances",
+            "method": "GET",
+            "sortNum": 260000,
+            "created": "2024-06-21T01:07:46.020Z",
+            "modified": "2024-06-21T01:07:53.531Z",
+            "headers": []
+        },
+        {
+            "_id": "38ae030d-b257-44d9-9b62-1f551d58a6fd",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "update attendance",
+            "url": "localhost:5000/attendance/12",
+            "method": "PUT",
+            "sortNum": 270000,
+            "created": "2024-06-21T01:08:27.699Z",
+            "modified": "2024-06-21T02:20:40.088Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"absent_out\": \"2024-06-21T09:15:38.447616Z\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "723c9914-69f0-4dc0-97a2-f5a71452f050",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "delete attendance",
+            "url": "localhost:5000/attendance/1",
+            "method": "DELETE",
+            "sortNum": 280000,
+            "created": "2024-06-21T01:31:25.926Z",
+            "modified": "2024-06-21T01:31:37.847Z",
+            "headers": []
+        },
+        {
+            "_id": "04595f23-1d64-4a18-8e95-a9a78cddd83d",
+            "colId": "d135f2bc-c285-468a-91e9-8ff15295588d",
+            "containerId": "",
+            "name": "get attendance report",
+            "url": "localhost:5000/attendance/report?start_date=2024-06-01 00:00:00&end_date=2024-06-30 23:59:59",
+            "method": "GET",
+            "sortNum": 290000,
+            "created": "2024-06-21T01:46:53.039Z",
+            "modified": "2024-06-21T01:54:47.968Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "start_date",
+                    "value": "2024-06-01 00:00:00",
+                    "isPath": false
+                },
+                {
+                    "name": "end_date",
+                    "value": "2024-06-30 23:59:59",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "settings": {
+        "auth": {
+            "type": "bearer",
+            "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZV9jb2RlIjoiMjEwNjAyMyIsImVtcGxveWVlX2lkIjoyMywiZW1wbG95ZWVfbmFtZSI6ImF0aGEiLCJleHAiOjE3MTg5Mzk5MzIsImlhdCI6MTcxODkzNjMzMiwiaXNzIjoiRW1wbG95ZWVBYnNlbmNlVGVzdCJ9.d4TWTtNgXw1SGazeA-YfZ6aXtlZ2nCjLdEz7Qp3K52w"
+        }
+    },
+    "ref": "kHpADdwKTwyx8AAXveIb9G-kjCa5vUWeBVU26XJmWbcMwFz-n3fa7OCAFVxdDod-EfU5CE17xVOfhYBaQabBXg"
+}
