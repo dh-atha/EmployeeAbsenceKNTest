@@ -1,0 +1,603 @@
+{
+    "info": {
+        "_postman_id": "8285abe1-ec4c-4298-9b58-b88aa3b7cf98",
+        "name": "absence",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": ""
+    },
+    "item": [
+        {
+            "name": "register",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:5000/register",
+                    "path": [
+                        "register"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"employee_name\": \"john\",\n  \"password\": \"john\"\n}"
+                }
+            }
+        },
+        {
+            "name": "login",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:5000/login",
+                    "path": [
+                        "login"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"employee_code\": \"2106023\",\n  \"password\": \"dummy\"\n}"
+                }
+            }
+        },
+        {
+            "name": "create employee",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:5000/employee",
+                    "path": [
+                        "employee"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"employee_name\": \"atha\",\n  \"password\": \"dummy\",\n  \"department_id\": 2,\n  \"position_id\": 4,\n  \"superior\": 8\n}"
+                }
+            }
+        },
+        {
+            "name": "get employee id",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:5000/employee/22",
+                    "path": [
+                        "employee",
+                        "22"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "update employee",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "localhost:5000/employee/22",
+                    "path": [
+                        "employee",
+                        "22"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"department_id\": 1,\n  \"superior\": 8,\n  \"position_id\": 1\n}"
+                }
+            }
+        },
+        {
+            "name": "delete employee",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "localhost:5000/employee/1",
+                    "path": [
+                        "employee",
+                        "1"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "get all employees",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:5000/employees",
+                    "path": [
+                        "employees"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "create department",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:5000/department",
+                    "path": [
+                        "department"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"department_name\": \"IT\"\n}"
+                }
+            }
+        },
+        {
+            "name": "get department id",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:5000/department/2",
+                    "path": [
+                        "department",
+                        "2"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "get all department",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:5000/departments",
+                    "path": [
+                        "departments"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "update department",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "localhost:5000/department/2",
+                    "path": [
+                        "department",
+                        "2"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"department_name\": \"Backend\"\n}"
+                }
+            }
+        },
+        {
+            "name": "delete department",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "localhost:5000/department/3",
+                    "path": [
+                        "department",
+                        "3"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "create position",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:5000/position",
+                    "path": [
+                        "position"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"position_name\": \"Golang Developer\",\n  \"department_id\": 2\n}"
+                }
+            }
+        },
+        {
+            "name": "get position",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:5000/position/2",
+                    "path": [
+                        "position",
+                        "2"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "get all position",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:5000/positions",
+                    "path": [
+                        "positions"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "update position",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "localhost:5000/position/2",
+                    "path": [
+                        "position",
+                        "2"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"position_name\": \"dummy\"\n}"
+                }
+            }
+        },
+        {
+            "name": "delete position",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "localhost:5000/position/3",
+                    "path": [
+                        "position",
+                        "3"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "create location",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:5000/location",
+                    "path": [
+                        "location"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"location_name\": \"HQ\"\n}"
+                }
+            }
+        },
+        {
+            "name": "get location id",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:5000/location/2",
+                    "path": [
+                        "location",
+                        "2"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "get all location",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:5000/locations",
+                    "path": [
+                        "locations"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "update location",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "localhost:5000/location/2",
+                    "path": [
+                        "location",
+                        "2"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"location_name\": \"coworking\"\n}"
+                }
+            }
+        },
+        {
+            "name": "delete location",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "localhost:5000/location/3",
+                    "path": [
+                        "location",
+                        "3"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "create attendance",
+            "request": {
+                "method": "POST",
+                "url": {
+                    "raw": "localhost:5000/attendance",
+                    "path": [
+                        "attendance"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  // \"employee_id\": 8, // default is current employee id from jwt\n  // \"absent_in\": \"2023-06-21T08:00:00Z\", // default is now utc\n  \"location_id\": 1\n}"
+                }
+            }
+        },
+        {
+            "name": "get attendance",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:5000/attendance/2",
+                    "path": [
+                        "attendance",
+                        "2"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "get all attendances",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:5000/attendances",
+                    "path": [
+                        "attendances"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "update attendance",
+            "request": {
+                "method": "PUT",
+                "url": {
+                    "raw": "localhost:5000/attendance/12",
+                    "path": [
+                        "attendance",
+                        "12"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                },
+                "body": {
+                    "mode": "raw",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    },
+                    "raw": "{\n  \"absent_out\": \"2024-06-21T09:15:38.447616Z\"\n}"
+                }
+            }
+        },
+        {
+            "name": "delete attendance",
+            "request": {
+                "method": "DELETE",
+                "url": {
+                    "raw": "localhost:5000/attendance/1",
+                    "path": [
+                        "attendance",
+                        "1"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        },
+        {
+            "name": "get attendance report",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "localhost:5000/attendance/report?start_date=2024-06-01 00:00:00&end_date=2024-06-30 23:59:59",
+                    "query": [
+                        {
+                            "key": "start_date",
+                            "value": "2024-06-01 00:00:00"
+                        },
+                        {
+                            "key": "end_date",
+                            "value": "2024-06-30 23:59:59"
+                        }
+                    ],
+                    "variable": [],
+                    "path": [
+                        "attendance",
+                        "report"
+                    ],
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "5000"
+                }
+            }
+        }
+    ],
+    "auth": {
+        "type": "bearer",
+        "bearer": [
+            {
+                "key": "token",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBsb3llZV9jb2RlIjoiMjEwNjAyMyIsImVtcGxveWVlX2lkIjoyMywiZW1wbG95ZWVfbmFtZSI6ImF0aGEiLCJleHAiOjE3MTg5Mzk5MzIsImlhdCI6MTcxODkzNjMzMiwiaXNzIjoiRW1wbG95ZWVBYnNlbmNlVGVzdCJ9.d4TWTtNgXw1SGazeA-YfZ6aXtlZ2nCjLdEz7Qp3K52w",
+                "type": "string"
+            }
+        ]
+    }
+}
